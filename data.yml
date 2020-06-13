@@ -1,0 +1,57 @@
+#     Question types
+#  - a question type requires at least one identifier
+#  - identifiers have to be in a list
+#  - they are used to identify that question type in the input
+
+question_types:
+  what:
+    identifiers:
+      - what
+  when:
+    identifiers:
+      - when
+  who:
+    identifiers:
+      - who
+  why:
+    identifiers:
+      - why
+  how:
+    identifiers:
+      - how
+
+
+#     Categories
+#  - each category requires a list of identifiers and a list of responses
+#  - each list of responses is required to have a default response lift
+#  - you can add a list of responses for that many question types as you want
+
+categories:
+  greetings:
+    identifiers:
+      - hi
+      - hello
+    responses:
+      default:
+        - Hi! :-)
+        - Nice to meet you!
+        - Hello! What is your name?
+  name:
+    identifiers:
+      - name
+      - call
+      - called
+    responses:
+      default:
+        - People call me William.
+      what:
+        - My name is William!
+
+
+#     Error responses
+#  - these are displayed when there is no other valid response
+#  - they are chosen randomly, you may add as many as you want to the list
+
+error_responses:
+  - Sorry, I don't understand.
+  - I am sorry, but I didn't understand you.
