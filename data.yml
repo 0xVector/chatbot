@@ -25,6 +25,8 @@ question_types:
 #  - each category requires a list of identifiers and a list of responses
 #  - each list of responses is required to have a default response lift
 #  - you can add a list of responses for that many question types as you want
+#
+#  Note: values like yes and no are automatically converted to their boolean values. Make sure to quote them, eg. "yes" and "no".
 
 categories:
   greetings:
