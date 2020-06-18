@@ -75,4 +75,6 @@ del file, category, question_type, identifier
 
 #  ======
 
-#while True: print(response(input()))
+if __name__ == "__main__":
+    while True:
+        print(response(input()))

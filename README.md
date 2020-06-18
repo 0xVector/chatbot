@@ -12,6 +12,8 @@ A keyword is a word, which determines the important content of input. Eg. if you
 ## How to implement
 
 Clone the repository or download `chatbot.py` and `data.yml`. Then, in your code, import using `import chatbot` and generate a response based on input using `chatbot.response(your_input)`.
+The other option is to just run the module and write some text to the console.
+
 You can then try to edit `data.yml` to add some behavior, for example add more categories, responses, identifiers or even more question types.
 
 
